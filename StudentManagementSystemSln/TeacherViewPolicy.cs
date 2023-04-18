@@ -19,16 +19,17 @@ namespace StudentManagementSystemSln
         DataTable table = new DataTable();
         private void TeacherViewPolicy_Load(object sender, EventArgs e)
         {
-            table.Columns.Add("Policy Permit Date", typeof(String));
-            table.Columns.Add("Policy",typeof(String));
-            dgvTeacherViewPolicy.DataSource = table;
-            dgvTeacherViewPolicy.Columns["Policy Permit Date"].Width = 150;
-            dgvTeacherViewPolicy.Columns["Policy"].Width = 448;
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
          
+        }
+
+        private void txtViewNoticeBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

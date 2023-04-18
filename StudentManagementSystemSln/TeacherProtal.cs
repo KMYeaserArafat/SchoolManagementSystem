@@ -72,5 +72,23 @@ namespace StudentManagementSystemSln
             tra.BringToFront();
             tra.Show();
         }
+
+        private void btnRecordResult_Click(object sender, EventArgs e)
+        {
+            TeacherRecordResult trr = new TeacherRecordResult();
+            trr.TopLevel = false;
+            panel3.Controls.Add(trr);
+            trr.BringToFront();
+            trr.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TeacherInformation tr = new TeacherInformation();
+            tr.TopLevel = false;
+            panel3.Controls.Add(tr);
+            tr.BringToFront();
+            tr.Show();
+        }
     }
 }

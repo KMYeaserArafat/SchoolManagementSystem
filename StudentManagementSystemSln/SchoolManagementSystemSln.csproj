@@ -64,8 +64,32 @@
     <Compile Include="LeseeonPlanAndShyllabus.Designer.cs">
       <DependentUpon>LeseeonPlanAndShyllabus.cs</DependentUpon>
     </Compile>
+    <Compile Include="pnlTAllStudentInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pnlTAllStudentInfo.Designer.cs">
+      <DependentUpon>pnlTAllStudentInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pnlTAllTeacherInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pnlTAllTeacherInfo.Designer.cs">
+      <DependentUpon>pnlTAllTeacherInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pnlTUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pnlTUserInfo.Designer.cs">
+      <DependentUpon>pnlTUserInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TeacherInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherInformation.Designer.cs">
+      <DependentUpon>TeacherInformation.cs</DependentUpon>
+    </Compile>
     <Compile Include="TeacherNoteRemender.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +107,12 @@
     </Compile>
     <Compile Include="TeacherRecordAttendance.Designer.cs">
       <DependentUpon>TeacherRecordAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherRecordResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherRecordResult.Designer.cs">
+      <DependentUpon>TeacherRecordResult.cs</DependentUpon>
     </Compile>
     <Compile Include="TeacherViewNotice.cs">
       <SubType>Form</SubType>
@@ -105,6 +135,15 @@
     <EmbeddedResource Include="LeseeonPlanAndShyllabus.resx">
       <DependentUpon>LeseeonPlanAndShyllabus.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="pnlTAllStudentInfo.resx">
+      <DependentUpon>pnlTAllStudentInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pnlTAllTeacherInfo.resx">
+      <DependentUpon>pnlTAllTeacherInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pnlTUserInfo.resx">
+      <DependentUpon>pnlTUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -114,6 +153,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TeacherInformation.resx">
+      <DependentUpon>TeacherInformation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TeacherNoteRemender.resx">
       <DependentUpon>TeacherNoteRemender.cs</DependentUpon>
     </EmbeddedResource>
@@ -122,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherRecordAttendance.resx">
       <DependentUpon>TeacherRecordAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherRecordResult.resx">
+      <DependentUpon>TeacherRecordResult.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherViewNotice.resx">
       <DependentUpon>TeacherViewNotice.cs</DependentUpon>

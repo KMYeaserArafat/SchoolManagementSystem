@@ -31,11 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TeacherViewPolicy));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dgvTeacherViewPolicy = new System.Windows.Forms.DataGridView();
+            this.txtViewNoticeBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTeacherViewPolicy)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -54,24 +53,25 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.dgvTeacherViewPolicy);
+            this.panel2.Controls.Add(this.txtViewNoticeBox);
             this.panel2.Location = new System.Drawing.Point(12, 62);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(805, 441);
             this.panel2.TabIndex = 1;
             // 
-            // dgvTeacherViewPolicy
+            // txtViewNoticeBox
             // 
-            this.dgvTeacherViewPolicy.AllowUserToAddRows = false;
-            this.dgvTeacherViewPolicy.AllowUserToDeleteRows = false;
-            this.dgvTeacherViewPolicy.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTeacherViewPolicy.Location = new System.Drawing.Point(3, 3);
-            this.dgvTeacherViewPolicy.Name = "dgvTeacherViewPolicy";
-            this.dgvTeacherViewPolicy.ReadOnly = true;
-            this.dgvTeacherViewPolicy.RowHeadersWidth = 51;
-            this.dgvTeacherViewPolicy.RowTemplate.Height = 24;
-            this.dgvTeacherViewPolicy.Size = new System.Drawing.Size(799, 435);
-            this.dgvTeacherViewPolicy.TabIndex = 0;
+            this.txtViewNoticeBox.BackColor = System.Drawing.Color.LightGray;
+            this.txtViewNoticeBox.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.txtViewNoticeBox.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtViewNoticeBox.Location = new System.Drawing.Point(31, 24);
+            this.txtViewNoticeBox.Multiline = true;
+            this.txtViewNoticeBox.Name = "txtViewNoticeBox";
+            this.txtViewNoticeBox.ReadOnly = true;
+            this.txtViewNoticeBox.Size = new System.Drawing.Size(752, 392);
+            this.txtViewNoticeBox.TabIndex = 0;
+            this.txtViewNoticeBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtViewNoticeBox.TextChanged += new System.EventHandler(this.txtViewNoticeBox_TextChanged);
             // 
             // label1
             // 
@@ -98,7 +98,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTeacherViewPolicy)).EndInit();
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -107,7 +107,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dgvTeacherViewPolicy;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtViewNoticeBox;
     }
 }

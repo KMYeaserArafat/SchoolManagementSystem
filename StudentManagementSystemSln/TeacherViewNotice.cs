@@ -27,37 +27,29 @@ namespace StudentManagementSystemSln
         DataTable table = new DataTable();
         private void TeacherViewNotice_Load(object sender, EventArgs e)
         {
-            table.Columns.Add("Date",typeof(String));
-            table.Columns.Add("Title", typeof(String));
-            table.Columns.Add("Notice", typeof(String));
-            dgvNotice.DataSource = table;
-            dgvNotice.Columns["Notice"].Width = 448;
-            dgvNotice.AutoSize = true;
+            
+        }
+
+           
+  
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
         }
 
         private void btnShowNotice_Click(object sender, EventArgs e)
         {
-            pnlShowNotice.Visible = true;
             try
             {
                 int index = dgvNotice.CurrentCell.RowIndex;
 
-                if (index >= 0)
-                {
-                    txtDate.Text = table.Rows[index].ItemArray[0].ToString();
-                    txtTitle.Text = table.Rows[index].ItemArray[1].ToString();
-                    txtNotice.Text = table.Rows[index].ItemArray[2].ToString();
-                }
-            }catch(Exception ex)
+                MessageBox.Show(table.Rows[index].ItemArray[3].ToString());
+            }
+            catch (Exception ex)
             {
-                MessageBox.Show("Total Notice Board is Blank");
+                MessageBox.Show("No Notice at yet !");
             }
            
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            pnlShowNotice.Hide();
         }
     }
 }
