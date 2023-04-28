@@ -50,6 +50,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnRefresh = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvShowRecordResult)).BeginInit();
@@ -72,6 +73,7 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.btnRefresh);
             this.panel4.Controls.Add(this.dgvShowRecordResult);
             this.panel4.Location = new System.Drawing.Point(13, 208);
             this.panel4.Name = "panel4";
@@ -282,6 +284,18 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.Transparent;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
+            this.btnRefresh.Location = new System.Drawing.Point(765, 0);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(52, 41);
+            this.btnRefresh.TabIndex = 16;
+            this.btnRefresh.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            // 
             // TeacherRecordResult
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -326,5 +340,6 @@
         private System.Windows.Forms.DataGridView dgvShowRecordResult;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnRefresh;
     }
 }

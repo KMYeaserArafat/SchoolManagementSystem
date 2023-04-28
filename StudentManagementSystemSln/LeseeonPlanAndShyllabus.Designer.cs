@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LessonPaneAndShyllebus));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnShowPlanDelete = new System.Windows.Forms.Button();
             this.dgvShowAllPlan = new System.Windows.Forms.DataGridView();
@@ -50,22 +54,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvShowAllPlan)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nUDClass)).BeginInit();
-            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(43)))), ((int)(((byte)(46)))));
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackColor = System.Drawing.Color.RosyBrown;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
@@ -75,6 +74,51 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(863, 536);
             this.panel1.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Gray;
+            this.panel4.Controls.Add(this.btnSearch);
+            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Controls.Add(this.label9);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(0, 188);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(863, 46);
+            this.panel4.TabIndex = 2;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Tai Le", 10F, System.Drawing.FontStyle.Bold);
+            this.btnSearch.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnSearch.Location = new System.Drawing.Point(575, 3);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(115, 38);
+            this.btnSearch.TabIndex = 4;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.Lavender;
+            this.textBox1.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(321, 7);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(248, 29);
+            this.textBox1.TabIndex = 3;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Microsoft Tai Le", 10F, System.Drawing.FontStyle.Bold);
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label9.Location = new System.Drawing.Point(252, 11);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(63, 22);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "Date : ";
             // 
             // panel3
             // 
@@ -92,11 +136,11 @@
             // 
             this.btnShowPlanDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnShowPlanDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnShowPlanDelete.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.btnShowPlanDelete.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShowPlanDelete.ForeColor = System.Drawing.Color.Yellow;
             this.btnShowPlanDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnShowPlanDelete.Image")));
             this.btnShowPlanDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnShowPlanDelete.Location = new System.Drawing.Point(723, 253);
+            this.btnShowPlanDelete.Location = new System.Drawing.Point(723, 249);
             this.btnShowPlanDelete.Name = "btnShowPlanDelete";
             this.btnShowPlanDelete.Size = new System.Drawing.Size(128, 41);
             this.btnShowPlanDelete.TabIndex = 15;
@@ -160,7 +204,7 @@
             this.btnClear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnClear.Location = new System.Drawing.Point(658, 104);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(111, 47);
+            this.btnClear.Size = new System.Drawing.Size(122, 47);
             this.btnClear.TabIndex = 14;
             this.btnClear.Text = "      Clear";
             this.btnClear.UseVisualStyleBackColor = false;
@@ -174,9 +218,9 @@
             this.btnAdd.ForeColor = System.Drawing.Color.Yellow;
             this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdd.Location = new System.Drawing.Point(532, 104);
+            this.btnAdd.Location = new System.Drawing.Point(505, 104);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(115, 47);
+            this.btnAdd.Size = new System.Drawing.Size(142, 47);
             this.btnAdd.TabIndex = 13;
             this.btnAdd.Text = "    Add";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -196,7 +240,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Tai Le", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(32)))), ((int)(((byte)(60)))));
-            this.label7.Location = new System.Drawing.Point(6, 119);
+            this.label7.Location = new System.Drawing.Point(19, 91);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(109, 22);
             this.label7.TabIndex = 11;
@@ -218,9 +262,9 @@
             this.btninsertDocument.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btninsertDocument.Font = new System.Drawing.Font("Modern No. 20", 10.8F);
             this.btninsertDocument.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btninsertDocument.Location = new System.Drawing.Point(617, 58);
+            this.btninsertDocument.Location = new System.Drawing.Point(630, 54);
             this.btninsertDocument.Name = "btninsertDocument";
-            this.btninsertDocument.Size = new System.Drawing.Size(152, 30);
+            this.btninsertDocument.Size = new System.Drawing.Size(127, 40);
             this.btninsertDocument.TabIndex = 9;
             this.btninsertDocument.Text = "Insert ";
             this.btninsertDocument.UseVisualStyleBackColor = false;
@@ -327,51 +371,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Add New Lesson Plan";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Tai Le", 10F, System.Drawing.FontStyle.Bold);
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label9.Location = new System.Drawing.Point(238, 14);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(63, 22);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "Date : ";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.Lavender;
-            this.textBox1.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(307, 11);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(248, 29);
-            this.textBox1.TabIndex = 3;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnSearch.Font = new System.Drawing.Font("Microsoft Tai Le", 10F, System.Drawing.FontStyle.Bold);
-            this.btnSearch.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnSearch.Location = new System.Drawing.Point(557, 6);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(87, 38);
-            this.btnSearch.TabIndex = 4;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = false;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Salmon;
-            this.panel4.Controls.Add(this.btnSearch);
-            this.panel4.Controls.Add(this.textBox1);
-            this.panel4.Controls.Add(this.label9);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 188);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(863, 46);
-            this.panel4.TabIndex = 2;
-            // 
             // LessonPaneAndShyllebus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -383,14 +382,14 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.LessonPaneAndShyllebus_Load);
             this.panel1.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvShowAllPlan)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nUDClass)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
